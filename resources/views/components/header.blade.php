@@ -1,5 +1,5 @@
 <header class="backdrop-blur-md bg-light-secondary-600 dark:bg-dark-light-400 fixed z-50 w-full">
-    <div class="flex items-center h-full px-1 mx-auto max-w-7xl sm:px-3 lg:px-6">
+    <div class="flex items-center h-full px-1 mx-auto max-w-7xl sm:px-3 lg:px-6 py-3">
         <button aria-label="mobileMenu"
             class="flex items-center transition-colors duration-200 justify-center lg:hidden d-icon w-12 h-12 lg:hidden text-gray-600 dark:text-gray-300 hover:text-cloud-lighter">
             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor"
