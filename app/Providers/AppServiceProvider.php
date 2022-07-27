@@ -23,8 +23,8 @@ class AppServiceProvider extends ServiceProvider
                 ->for(route('universes')),
             Nav::item(__("Marketinflu"))
                 ->for(route('marketinflu')),
-            Nav::item(__("Ressources"))
-                ->for(route('resources')),
+            /* Nav::item(__("Ressources"))
+                ->for(route('resources')), */
             Nav::item(__("Contact"))
                 ->for(route('contact')),
         ], 'header');
