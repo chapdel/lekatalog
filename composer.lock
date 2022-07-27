@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "22eb9d1d94c4b07faffaf346ffcda64a",
+    "content-hash": "568d74323e10a1d10382f2b90f80419b",
     "packages": [
         {
             "name": "brick/math",
@@ -1821,6 +1821,72 @@
                 }
             ],
             "time": "2022-07-24T11:55:47+00:00"
+        },
+        {
+            "name": "nedwors/navigator",
+            "version": "0.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nedwors/navigator.git",
+                "reference": "6e4841f1aa8a822069e56eecf1807928194fef66"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nedwors/navigator/zipball/6e4841f1aa8a822069e56eecf1807928194fef66",
+                "reference": "6e4841f1aa8a822069e56eecf1807928194fef66",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^8.0|^9.0",
+                "php": "^8.0|^8.1"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.1",
+                "nunomaduro/larastan": "^0.7.12",
+                "orchestra/testbench": "^6.0",
+                "pestphp/pest": "^1.20",
+                "pestphp/pest-plugin-laravel": "^1.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Nedwors\\Navigator\\NavigatorServiceProvider"
+                    ],
+                    "aliases": {
+                        "Menu": "Nedwors\\Navigator\\Facades\\Menu"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Nedwors\\Navigator\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sam Rowden",
+                    "email": "nedwors@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A Laravel package to ease defining navigation menus",
+            "homepage": "https://github.com/nedwors/navigator",
+            "keywords": [
+                "laravel",
+                "menu",
+                "navigation",
+                "nedwors"
+            ],
+            "support": {
+                "issues": "https://github.com/nedwors/navigator/issues",
+                "source": "https://github.com/nedwors/navigator/tree/0.3.0"
+            },
+            "time": "2022-02-21T19:20:35+00:00"
         },
         {
             "name": "nesbot/carbon",
