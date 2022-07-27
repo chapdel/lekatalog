@@ -22,21 +22,22 @@
 </head>
 
 <body class="font-sans antialiased">
-    {{-- <x-header></x-header> --}}
+    <x-header></x-header>
     <main>
         {{ $slot }}
     </main>
-    <x-footer></x-footer>
+    @livewire('partials.footer')
     <x-dialog z-index="z-50" blur="md" align="center" />
+    <x-notifications position="bottom-right" z-index="z-50" />
     <script>
         Livewire.onPageExpired((response, message) => {})
     </script>
     <script>
-        /* window.dataLayer = window.dataLayer || [];
+        window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
-        gtag('config', 'G-MSW0VZTNFZ'); */
+        gtag('config', {{env('GTAG')}});
     </script>
 </body>
 
