@@ -3,6 +3,8 @@
 namespace App\Http\Pages;
 
 use App\Models\Contact as ModelsContact;
+use Exception;
+use Illuminate\Support\Facades\DB;
 use Livewire\Component;
 use WireUi\Traits\Actions;
 
@@ -23,21 +25,30 @@ class Contact extends Component
             'message' => ['required', 'string', 'max:1024'],
         ]);
 
-        ModelsContact::create([
-            'name' => $this->name,
-            'email' => $this->email,
-            'phone' => $this->phone,
-            'message' => $this->message
-        ]);
+        DB::beginTransaction();
 
-        Newsletter::subscribeOrUpdate($this->email);
+        try {
+            ModelsContact::create([
+                'name' => $this->name,
+                'email' => $this->email,
+                'phone' => $this->phone,
+                'message' => $this->message
+            ]);
 
-        $this->reset();
+            \Newsletter::subscribeOrUpdate($this->email);
 
-        $this->notification()->info(
-            $title = __('Le Katalog'),
-            $description = __('Nous avons reçu votre message, nous vous tiendrons informé le plus rapidement possible. '),
-        );
+            $this->reset();
+
+            $this->notification()->info(
+                $title = __('Le Katalog'),
+                $description = __('Nous avons reçu votre message, nous vous tiendrons informé le plus rapidement possible. '),
+            );
+
+            DB::commit();
+        } catch (Exception $th) {
+            dd($th);
+            DB::rollBack();
+        }
     }
 
     public function render()

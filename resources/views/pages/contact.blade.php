@@ -202,7 +202,7 @@
                 <x-input :placeholder="__('Votre nom')" wire:model.lazy="name"></x-input>
                 <x-input :placeholder="__('Email')" wire:model.lazy="email"></x-input>
                 <x-input :placeholder="__('Telephone')" wire:model.lazy="phone"></x-input>
-                <x-textarea :placeholder="__('Message')" wire:model.lazy="mesage"></x-textarea>
+                <x-textarea :placeholder="__('Message')" wire:model.lazy="message"></x-textarea>
                 <x-button primary class="block" type="submit" spinner="send">{{ __("Envoyer") }}</x-button>
             </form>
         </div>
