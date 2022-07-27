@@ -22,3 +22,7 @@
 .active-page .active-page-label {
     @apply text-primary-600;
 }
+
+.svg-icon {
+    @apply stroke-gray-100;
+}
