@@ -20,7 +20,8 @@
                 <div class="w-80 h-64 bg-red-600 lg:mx-0 mx-auto"></div>
             </div>
             <div class="space-y-2.5">
-                <h2 class="text-2xl text-center lg:text-left dark:text-gray-200 font-medium text-gray-800">
+                <h2
+                    class="text-2xl font-semibold text-gray-100 text-center lg:text-left dark:text-gray-200 font-medium text-gray-800">
                     {{ __("L'impact du marketing d'influence") }}
                 </h2>
                 <p>
@@ -169,8 +170,8 @@
                     </div>
                     <div class="w-full text-center md:text-left md:max-w-[445px] laptop:max-w-[346px]">
                         <div>
-                            <h3 class="text-2xl">{{ __("Les advisers") }}</h3>
-                            <p>
+                            <h3 class="text-2xl font-semibold text-gray-100">{{ __("Les advisers") }}</h3>
+                            <p class="text-gray-200">
                                 {{
                                 __(
                                 "Ce sont des consommateurs “lambda”, autrement dit de simples M. et Mme Tout le monde.
@@ -1853,8 +1854,8 @@
                     </div>
                     <div class="w-full text-center md:text-left md:max-w-[445px] laptop:max-w-[346px]">
                         <div>
-                            <h3 class="text-2xl">{{ __("ENQUETE DE SATISFACTION") }}</h3>
-                            <p>
+                            <h3 class="text-2xl font-semibold text-gray-100">{{ __("ENQUETE DE SATISFACTION") }}</h3>
+                            <p class="text-gray-200">
                                 {{
                                 __(
                                 "Il n’y a qu’un patron : le client. Et il peut licencier tout le personnel, depuis le
@@ -3370,10 +3371,10 @@
                     </div>
                     <div class="w-full text-center md:text-left md:max-w-[445px] laptop:max-w-[346px]">
                         <div>
-                            <h3 class="text-2xl">
+                            <h3 class="text-2xl font-semibold text-gray-100">
                                 {{ __("TRANSFORMATION DES HABITUDES DE CONSOMMATION") }}
                             </h3>
-                            <p>
+                            <p class="text-gray-200">
                                 {{
                                 __(
                                 "Le « temps d’écran » explose ! Confiné à la maison, encouragé à ne pas sortir, le monde
@@ -4904,7 +4905,7 @@
                         <div
                             class="scroll-mt-[15rem] lg:max-w-[350px] mx-auto lg:mx-0 pt-6 md:pt-12 md:pb-12 lg:pt-20 lg:pb-52 text-center lg:text-left">
                             <div class="space-y-4">
-                                <h3 class="text-2xl text-secondary-400 font-semibold">
+                                <h3 class="text-2xl font-semibold text-gray-100 text-secondary-400 font-semibold">
                                     Le Splash
                                 </h3>
                                 <p class="text-gray-600 dark:text-gray-300 text-lg">
@@ -5011,7 +5012,7 @@
                         <div
                             class="scroll-mt-[15rem] lg:max-w-[350px] mx-auto lg:mx-0 pt-6 md:pt-12 md:pb-12 lg:pt-20 lg:pb-52 text-center lg:text-left">
                             <div class="space-y-4">
-                                <h3 class="text-2xl text-secondary-400 font-semibold">
+                                <h3 class="text-2xl font-semibold text-gray-100 text-secondary-400 font-semibold">
                                     L'aiche
                                 </h3>
                                 <p class="text-gray-600 dark:text-gray-300 text-lg">
@@ -5306,7 +5307,8 @@
                         <div
                             class="scroll-mt-[15rem] lg:max-w-[350px] mx-auto lg:mx-0 pt-6 md:pt-12 md:pb-12 lg:pt-20 lg:pb-52 text-center lg:text-left">
                             <div class="space-y-4">
-                                <h3 class="text-2xl text-secondary-400 font-semibold uppercase">
+                                <h3
+                                    class="text-2xl font-semibold text-gray-100 text-secondary-400 font-semibold uppercase">
                                     Sales Booster
                                 </h3>
                                 <p class="text-gray-600 dark:text-gray-300 text-lg">
@@ -5511,7 +5513,7 @@
                         <div
                             class="scroll-mt-[15rem] lg:max-w-[350px] mx-auto lg:mx-0 pt-6 md:pt-12 md:pb-12 lg:pt-20 lg:pb-52 text-center lg:text-left">
                             <div class="space-y-4">
-                                <h3 class="text-2xl text-secondary-400 font-semibold">
+                                <h3 class="text-2xl font-semibold text-gray-100 text-secondary-400 font-semibold">
                                     La-Taupe-Data-Seller
                                 </h3>
                                 <p class="text-gray-600 dark:text-gray-300 text-lg">
@@ -5725,7 +5727,7 @@
                         <div
                             class="scroll-mt-[15rem] lg:max-w-[350px] mx-auto lg:mx-0 pt-6 md:pt-12 md:pb-12 lg:pt-20 lg:pb-52 text-center lg:text-left">
                             <div class="space-y-4">
-                                <h3 class="text-2xl text-secondary-400 font-semibold">
+                                <h3 class="text-2xl font-semibold text-gray-100 text-secondary-400 font-semibold">
                                     TAKE OVER
                                 </h3>
                                 <p class="text-gray-600 dark:text-gray-300 text-lg">
@@ -5833,7 +5835,7 @@
                         <div
                             class="scroll-mt-[15rem] lg:max-w-[350px] mx-auto lg:mx-0 pt-6 md:pt-12 md:pb-12 lg:pt-20 lg:pb-52 text-center lg:text-left">
                             <div class="space-y-4">
-                                <h3 class="text-2xl text-secondary-400 font-semibold">
+                                <h3 class="text-2xl font-semibold text-gray-100 text-secondary-400 font-semibold">
                                     Group Shot Tir Groupe
                                 </h3>
                                 <p class="text-gray-600 dark:text-gray-300 text-lg">
@@ -5940,7 +5942,7 @@
                         <div
                             class="scroll-mt-[15rem] lg:max-w-[350px] mx-auto lg:mx-0 pt-6 md:pt-12 md:pb-12 lg:pt-20 lg:pb-52 text-center lg:text-left">
                             <div class="space-y-4">
-                                <h3 class="text-2xl text-secondary-400 font-semibold">
+                                <h3 class="text-2xl font-semibold text-gray-100 text-secondary-400 font-semibold">
                                     Le Venin
                                 </h3>
                                 <p class="text-gray-600 dark:text-gray-300 text-lg">
@@ -6048,7 +6050,7 @@
                         <div
                             class="scroll-mt-[15rem] lg:max-w-[350px] mx-auto lg:mx-0 pt-6 md:pt-12 md:pb-12 lg:pt-20 lg:pb-52 text-center lg:text-left">
                             <div class="space-y-4">
-                                <h3 class="text-2xl text-secondary-400 font-semibold">
+                                <h3 class="text-2xl font-semibold text-gray-100 text-secondary-400 font-semibold">
                                     The Bite
                                 </h3>
                                 <p class="text-gray-600 dark:text-gray-300 text-lg">
@@ -6269,30 +6271,30 @@
     var theBite = ($('.the-bite').offset().top) - compensation;
     var footer = ($('footer').offset().top) - compensation;
     var scrollPos = $(document).scrollTop();
-    
-    
+
+
     // Apply text changes
     if (scrollPos >= splash && scrollPos < laiche) {
       $('.displayer').toggleClass('lg:hidden');
     }
     else if (scrollPos >= laiche && scrollPos < saleBooster) {
-      $('.displayer').toggleClass('lg:hidden');  
+      $('.displayer').toggleClass('lg:hidden');
     }
     else if (scrollPos >= saleBooster && scrollPos < taupeDataSeller) {
-      $('.displayer').toggleClass('lg:hidden');  
+      $('.displayer').toggleClass('lg:hidden');
     }
     else if (scrollPos >= theMold && scrollPos < takeOver) {
-      $('.displayer').toggleClass('lg:hidden');  
+      $('.displayer').toggleClass('lg:hidden');
     }
     else if (scrollPos >= groupTirGroup && scrollPos < leVenin) {
-      $('.displayer').text('Work');  
+      $('.displayer').text('Work');
     }
     else if (scrollPos >= theBite && scrollPos < footer) {
-      $('.displayer').text('Contact');  
+      $('.displayer').text('Contact');
     }
     else {
-      $('.displayer').text('');  
-    } 
+      $('.displayer').text('');
+    }
   }); // close scroll function
 }); // close document ready
 </script>
