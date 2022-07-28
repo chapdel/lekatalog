@@ -2,6 +2,7 @@
 
 use App\Http\Pages\Contact;
 use App\Http\Pages\Home;
+use App\Http\Pages\Marketinflu;
 use App\Http\Pages\Resource\Browse;
 use Illuminate\Support\Facades\Route;
 
@@ -19,7 +20,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', Home::class)->name('home');
 Route::get('/contact', Contact::class)->name('contact');
 Route::get('/resources', Browse::class)->name('resources');
-Route::get('/marketinflu', Home::class)->name('marketinflu');
+Route::get('/marketinflu', Marketinflu::class)->name('marketinflu');
 Route::get('/universes', Home::class)->name('universes');
 Route::get('/catalogs', Home::class)->name('catalogs');
 Route::get('/campaigns', Home::class)->name('campaigns');
