@@ -31,10 +31,18 @@
         </div>
         <div class="pt-20 lg:ml-24">
             <div class="relative w-96 bg-blue-500">
-                <div class="bg-red-500 absolute h-72 w-64 origin-bottom-right rounded-lg rotate-36 shadow"></div>
-                <div class="bg-indigo-500 absolute h-72 w-64 origin-bottom-right rounded-lg rotate-24 shadow"></div>
-                <div class="bg-purple-500 absolute h-72 w-64 origin-bottom-right rounded-lg rotate-12 shadow"></div>
-                <div class="bg-teal-500 absolute h-72 w-64 rounded-lg shadow"></div>
+                <div
+                    class="bg-[url('http://le-katalog.com/wp-content/uploads/2021/05/kid-representation.jpg')] bg-cover bg-center absolute h-72 w-64 origin-bottom-right rounded-lg rotate-36 shadow">
+                </div>
+                <div
+                    class="bg-[url('https://le-katalog.com/wp-content/uploads/2020/12/leader-Happy-Ndongo-1.jpg')] bg-cover bg-center bg-indigo-500 absolute h-72 w-64 origin-bottom-right rounded-lg rotate-24 shadow">
+                </div>
+                <div
+                    class="bg-[url('http://le-katalog.com/wp-content/uploads/2021/05/all-influencer-representation.jpg')] bg-cover bg-center bg-purple-500 absolute h-72 w-64 origin-bottom-right rounded-lg rotate-12 shadow">
+                </div>
+                <div
+                    class="bg-[url('https://le-katalog.com/wp-content/uploads/2020/12/muriel-blanche-cat.jpg')] bg-cover bg-center absolute h-72 w-64 rounded-lg shadow">
+                </div>
             </div>
         </div>
     </div>
