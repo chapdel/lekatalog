@@ -26,3 +26,7 @@
 .svg-icon {
     @apply stroke-gray-100;
 }
+
+.vjs-theme-forest {
+    @apply fill-primary-600 !important;
+}
