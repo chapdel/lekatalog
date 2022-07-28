@@ -62,7 +62,7 @@
 <div class="h-[32rem] w-full bg-primary-500 py-10">
     <div class="max-w-screen-xl mx-auto grid grid-cols-12 gap-10">
         <div class="h-[24rem] w-10/12 mx-auto bg-secondary-500 col-span-8 rounded-xl">
-            <video id="my-video" class="video-js h-full w-full rounded-xl" controls preload="auto"
+            <video id="my-video" class="video-js h-full w-full rounded vjs-theme-forest" controls preload="auto"
                 poster="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg" data-setup="{}">
                 <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4" type="video/mp4" />
                 <source src="MY_VIDEO.webm" type="video/webm" />
@@ -93,5 +93,4 @@
 
     // plyr
 
-    const player = new Plyr('#player');
 </script>
