@@ -18,7 +18,8 @@ use Illuminate\Support\Str;
 class CategoryResource extends Resource
 {
     protected static ?string $model = Category::class;
-    protected static ?string $label = "Model categories";
+    protected static ?string $label = "Universes";
+    protected static ?string $navigationGroup = "Data";
 
     protected static ?string $navigationIcon = 'heroicon-o-collection';
     protected static ?string $recordTitleAttribute = 'name';

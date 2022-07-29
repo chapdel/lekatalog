@@ -20,6 +20,7 @@ class GroupResource extends Resource
     protected static ?string $model = Group::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-archive';
+    protected static ?string $navigationGroup = "Data";
 
     public static function form(Form $form): Form
     {
