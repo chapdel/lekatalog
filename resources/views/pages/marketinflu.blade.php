@@ -1,4 +1,4 @@
-<div class="pt-20 px-4">
+<div class="pt-20 px-4" data-theme="light">
     <div class="flex flex-col-reverse text-center my-8">
         <div>
             <h1 class="text-3xl font-bold text-primary-600 dark:text-primary-200">
@@ -17,7 +17,7 @@
     <div class="max-w-screen-xl mx-auto text-gray-700 dark:text-gray-300">
         <div class="grid lg:grid-cols-2">
             <div class="w-full">
-                <div class="w-80 h-64 bg-red-600 lg:mx-0 mx-auto"></div>
+                {{-- <div class="artboard artboard-horizontal phone- bg-white">667×375</div> --}}
             </div>
             <div class="space-y-2.5">
                 <h2

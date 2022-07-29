@@ -13,6 +13,7 @@ module.exports = {
     theme: {
         extend: {
             colors: {
+                secondary: "#eb6229",
                 primary: {
                     50: "#ff73a3",
                     100: "#ff6999",
@@ -110,7 +111,18 @@ module.exports = {
     },
     daisyui: {
         styled: true,
-        themes: true,
+        themes: [
+            "dark",
+            "light",
+            {
+                cupcake: {
+                    ...require("daisyui/src/colors/themes")[
+                        "[data-theme=cupcake]"
+                    ],
+                    secondary: "#eb6229",
+                },
+            },
+        ],
         base: true,
         utils: true,
         logs: false,

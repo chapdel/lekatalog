@@ -66,7 +66,7 @@
                     class="invisible group-hover:visible bg-primary-600 ml-2 w-0 group-hover:w-1/3 h-1 rounded-full transition-width transition-slowest ease active-page-indicator">
                 </div>
 
-                @if ($navitem->name == 'Catalogues')
+                {{-- @if ($navitem->name == 'Catalogues')
                 <div @mouseleave="catalogs=false" @click.away="catalogs=false" x-show="catalogs"
                     x-transition:enter="duration-200 ease-out scale-95" x-transition:enter-start="opacity-50 scale-95"
                     x-transition:enter-end="opacity-100 scale-100"
@@ -91,7 +91,7 @@
                         @endforeach
                     </div>
                 </div>
-                @endif
+                @endif --}}
             </a>
             @endforeach
             {{-- <div class="relative inline-block text-left cursor-default">
