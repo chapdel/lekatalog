@@ -1,4 +1,4 @@
-<div class="max-w-screen-xl mx-auto pt-20 space-y-10">
+<div class="max-w-screen-xl mx-auto pt-20 space-y-10 px-4">
     <div class="flex flex-col-reverse my-8">
         <div>
             <h1 class="text-3xl font-bold text-primary-600 dark:text-primary-200">
@@ -9,8 +9,8 @@
             </p>
         </div>
     </div>
-    <div class="grid grid-cols-2 gap-8">
-        <div class="h-[40rem] w-full bg-primary-50 rounded-lg bg-top bg-cover"
+    <div class="grid lg:grid-cols-2 gap-8">
+        <div class="h-[30rem] lg:h-[40rem] w-full bg-primary-50 rounded-lg bg-top bg-cover"
             style="background-image: url('{{$influencer->avatar}}')"></div>
         <div class="space-y-3">
             <h2 class="text-5xl font-semibold">{{$influencer->name}}</h2>
