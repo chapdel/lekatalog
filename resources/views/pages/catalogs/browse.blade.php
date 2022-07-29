@@ -23,7 +23,8 @@
                             <div>
                                 <div
                                     class="group cursor-pointer relative w-full rounded-[20px] overflow-hidden aspect-[343/400] [transform:translateZ(0)] lg:aspect-[434/508]">
-                                    <a class="relative block h-full w-full overflow-hidden" href="/work/queensmith">
+                                    <a class="relative block h-full w-full overflow-hidden"
+                                        href="{{route('catalogs.details', $group->slug)}}">
                                         <div class="absolute inset-0 w-full h-full"><span
                                                 style="box-sizing: border-box; display: block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; inset: 0px;"><img
                                                     alt="Queensmith"
@@ -68,7 +69,8 @@
                                 </div>
                                 <div
                                     class="flex justify-between mt-[20px] flex-col items-start uppercase font-semibold">
-                                    <a href="#" class="group inline-flex flex-none items-center cursor-pointer">
+                                    <a href="{{route('catalogs.details', $group->slug)}}"
+                                        class="group inline-flex flex-none items-center cursor-pointer">
                                         <div
                                             class="px-[9px] pt-[4px] pb-[1px] border-[2px] uppercase font-display text-[14px] leading-none tracking-[0.04em] font-semibold rounded-[30px]">
                                             {{$group->name}}</div>

@@ -2,6 +2,7 @@
 
 use App\Http\Pages\Campaigns;
 use App\Http\Pages\Catalogs\Browse as CatalogsBrowse;
+use App\Http\Pages\Catalogs\Details;
 use App\Http\Pages\Contact;
 use App\Http\Pages\Home;
 use App\Http\Pages\Marketinflu;
@@ -26,4 +27,5 @@ Route::get('/resources', Browse::class)->name('resources');
 Route::get('/marketinflu', Marketinflu::class)->name('marketinflu');
 Route::get('/universes', UniverseBrowse::class)->name('universes');
 Route::get('/catalogs', CatalogsBrowse::class)->name('catalogs');
+Route::get('/catalogs/{slug}', Details::class)->name('catalogs.details');
 Route::get('/campaigns', Campaigns::class)->name('campaigns');
