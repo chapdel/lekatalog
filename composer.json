@@ -20,6 +20,7 @@
         "propaganistas/laravel-phone": "^4.3",
         "spatie/laravel-newsletter": "^4.11",
         "stechstudio/filament-impersonate": "^2.5",
+        "twbs/bootstrap-icons": "^1.9",
         "wireui/wireui": "^1.12"
     },
     "require-dev": {
