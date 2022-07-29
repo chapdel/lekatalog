@@ -17,8 +17,8 @@ class AppServiceProvider extends ServiceProvider
         Nav::define(fn ($user) => [
             Nav::item(__('Campagnes'))
                 ->for(route('campaigns')),
-            /* Nav::item(__('Catalogues'))
-                ->for(route('catalogs')), */
+            Nav::item(__('Catalogues'))
+                ->for(route('catalogs')),
             /* Nav::item(__("Univers d'influences"))
                 ->for(route('universes')), */
             Nav::item(__("Marketinflu"))

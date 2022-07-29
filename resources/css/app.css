@@ -30,3 +30,10 @@
 .vjs-theme-forest {
     @apply fill-primary-600 !important;
 }
+
+[x-cloak] {
+    display: none !important;
+}
+.h1 {
+    @apply text-8xl;
+}

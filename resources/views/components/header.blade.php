@@ -53,18 +53,45 @@
                 </svg>
             </a>
         </div>
-        <nav class="items-center justify-center hidden h-full lg:flex">
+        <nav class="items-center justify-center hidden h-full lg:flex" x-data="{catalogs: false}">
 
             @foreach (navitems("header") as $navitem )
-            <a href="{{$navitem->url}}" :aria-label="__('Campagnes')"
+            <a href="{{$navitem->url}}" :aria-label="__($navitem->name)" @mouseenter="catalogs = true"
                 class="flex lg:flex-col items-start w-full mx-2 cursor-pointer group @if($navitem->active) active-page @endif">
                 <span :aria-label="__('Campagnes')"
                     class="active-page-label flex font-semibold whitespace-nowrap px-1 pt-2 transition-colors group-hover:text-primary-600 text-gray-700 dark:text-gray-300">
-                    {{ $navitem->name }}
+                    {{ __($navitem->name) }}
                 </span>
                 <div
                     class="invisible group-hover:visible bg-primary-600 ml-2 w-0 group-hover:w-1/3 h-1 rounded-full transition-width transition-slowest ease active-page-indicator">
                 </div>
+
+                @if ($navitem->name == 'Catalogues')
+                <div @mouseleave="catalogs=false" @click.away="catalogs=false" x-show="catalogs"
+                    x-transition:enter="duration-200 ease-out scale-95" x-transition:enter-start="opacity-50 scale-95"
+                    x-transition:enter-end="opacity-100 scale-100"
+                    x-transition:leave="transition duration-100 ease-in scale-100"
+                    x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-95"
+                    class="flex bg-light-secondary-600 dark:bg-dark-light-600 space-x-8 p-5 shadow-lg rounded-2xl absolute top-[4rem] left-[6rem] right-[6rem]"
+                    x-cloak>
+                    <div class="w-3/12 bg-red-500">Poster</div>
+                    <div class="w-9/12 grid grid-cols-4 gap-x-5 gap-y-3 rounded-2xl">
+                        @foreach (App\Models\Group::all() as $group)
+                        <div
+                            class="space-x-4 dark:bg-dark-light-400 group p-0.5 pb-2 rounded hover:bg-primary-50 dark:hover:bg-primary-400 bg-opacity-10 hover:text-gray-100 px-1.5">
+                            <div class="space-y-3">
+                                <div
+                                    class="w-full h-48 border-purple-600 rounded bg-cover bg-center bg-[url('https://le-katalog.com/wp-content/uploads/2020/12/muriel-blanche-cat.jpg')]">
+                                </div>
+                                <h2 class="text-lg font-medium dark:text-gray-200 ">
+                                    {{$group->name}}
+                                </h2>
+                            </div>
+                        </div>
+                        @endforeach
+                    </div>
+                </div>
+                @endif
             </a>
             @endforeach
             {{-- <div class="relative inline-block text-left cursor-default">
