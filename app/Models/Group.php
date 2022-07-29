@@ -9,4 +9,19 @@ class Group extends Model
 {
     use HasFactory;
     protected $guarded = ['id'];
+
+    /**
+     * Get the route key for the model.
+     *
+     * @return string
+     */
+    public function getRouteKeyName()
+    {
+        return 'slug';
+    }
+
+    public function influencers()
+    {
+        return $this->hasMany(Influencer::class);
+    }
 }

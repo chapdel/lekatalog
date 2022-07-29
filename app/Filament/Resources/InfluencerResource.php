@@ -7,6 +7,7 @@ use App\Filament\Resources\InfluencerResource\RelationManagers;
 use App\Models\Group;
 use App\Models\Influencer;
 use Filament\Forms;
+use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\Grid;
 use Filament\Forms\Components\Select;
 use Filament\Resources\Form;
@@ -55,6 +56,7 @@ class InfluencerResource extends Resource
                             ->columnSpan([
                                 'sm' => 2,
                             ]),
+                        FileUpload::make('poster')->columnSpan(['sm' => 2]),
                         Forms\Components\Toggle::make('is_visible')
                             ->label('Visible to visitor.')
                             ->default(true),
