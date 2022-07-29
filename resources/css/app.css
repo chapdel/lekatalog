@@ -35,5 +35,5 @@
     display: none !important;
 }
 .h1 {
-    @apply text-8xl;
+    @apply text-5xl;
 }
