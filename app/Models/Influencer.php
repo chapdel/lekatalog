@@ -16,6 +16,6 @@ class Influencer extends Model
     public function getAvatarAttribute()
     {
 
-        return Storage::url($this->poster);
+        return url(Storage::url($this->poster));
     }
 }
