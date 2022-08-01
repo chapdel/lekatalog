@@ -6,6 +6,7 @@ use App\Filament\Resources\GroupResource\Pages;
 use App\Filament\Resources\GroupResource\RelationManagers;
 use App\Models\Group;
 use Filament\Forms;
+use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\Grid;
 use Filament\Resources\Form;
 use Filament\Resources\Resource;
@@ -42,6 +43,7 @@ class GroupResource extends Resource
                             ->columnSpan([
                                 'sm' => 2,
                             ]),
+                        FileUpload::make('poster')->columnSpan(['sm' => 2]),
                         Forms\Components\Toggle::make('is_visible')
                             ->label('Visible to visitor.')
                             ->default(true),

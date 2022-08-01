@@ -27,12 +27,11 @@
                                         href="{{route('catalogs.details', $group->slug)}}">
                                         <div class="absolute inset-0 w-full h-full"><span
                                                 style="box-sizing: border-box; display: block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; inset: 0px;"><img
-                                                    alt="Queensmith"
-                                                    src="https://le-katalog.com/wp-content/uploads/2020/12/muriel-blanche-cat.jpg"
-                                                    decoding="async" data-nimg="fill" class="relative z-10"
+                                                    alt="{{$group->name}}" src="{{$group->avatar}}" decoding="async"
+                                                    data-nimg="fill" class="relative z-10"
                                                     style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
                                                     sizes="100vw"
-                                                    srcset="https://le-katalog.com/wp-content/uploads/2020/12/muriel-blanche-cat.jpg"><noscript></noscript></span>
+                                                    srcset="{{$group->avatar}}"><noscript></noscript></span>
                                         </div>
                                         <div
                                             class="z-10 absolute w-full h-full inset-0 bg-black opacity-0 transition-opacity duration-1000 ease-in-out group-hover:opacity-40">
